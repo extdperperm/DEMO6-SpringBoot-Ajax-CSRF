@@ -1,0 +1,10 @@
+<p style="color:rgb(255, 128, 64);" th:text="${MensajeError}"></p>
+<table th:if="${MensajeError} == ''">
+	<caption>Repeticiones de la palabra</caption>
+	<tr>
+		<th>Palabras</th>
+	</tr>
+	<tr th:each="palabra : ${Lista}">
+		<td th:text="${palabra}"></td>
+	</tr>
+</table>

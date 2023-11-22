@@ -1,0 +1,136 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(61, 61, 61);
+    padding-top: 5%;
+}
+
+body > div {
+margin-bottom: 10px;
+border: 1px solid rgb(255, 255, 255, 0);
+    
+}
+
+body > div > div > p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 15px;
+    text-align: center;
+}
+
+body > div > div:first-child > p {
+    font-weight: bold;
+}
+
+
+
+body > div > div:last-child {
+    border: rgb(240, 240, 240) 2px solid;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+div.waiting {
+    background-image: url('../img/waiting.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    height: 100px;
+}
+
+/*Estilos formulario*/
+form {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    border: rgb(240, 240, 240) 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: inline-block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 160px;
+}
+
+form > div {
+    margin-top: 10px;
+}
+
+form > div:last-child {
+    text-align: center;
+}
+
+form input {
+    height: 30px;
+}
+
+form input[type="number"] {
+    width: 60px;
+}
+
+form input[type="text"] {
+    width: 160px;
+}
+
+form input[type="button"] {
+    height: 30px;
+    width: 60px;
+    background-color: white;
+    border-width: 0px;
+}
+
+form input[type="button"]:hover {
+    background-color: rgb(94, 94, 94);
+    cursor: pointer;
+    color: white;
+}
+
+/*Estilos tabla*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    border-collapse: collapse;
+    min-width: 400px;
+    font-family: arial;
+    font-size: 16px;
+}
+
+table caption {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+table th, td {
+    text-align: center;
+    border: 1px solid white;
+}
+
+table th {
+    padding: 5px;
+    background-color: rgb(180, 180, 180);
+    color: black;
+}
+
+table td {
+    padding: 5px;
+    color: white;
+}
+

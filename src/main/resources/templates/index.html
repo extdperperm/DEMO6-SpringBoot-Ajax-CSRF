@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="_csrf" th:content="${_csrf.token}" />
+    <meta name="_csrf_header" th:content="${_csrf.headerName}" />
+    <title>Ejemplo peticones asíncronas al servidor</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+    <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+    <script th:src="@{/js/index.js}"></script>
+</head>
+<body> 
+
+    <div>
+        <div><p>Ejemplo 1: Petición asíncrona GET y respuesta con SUBVISTA</p></div>
+        <div>
+            <form>
+                <div><label>Max. Nº Repeticiones: </label><input id="F1Nrep" type="number" min="1" max="40" /></div>
+                <div><label>Palabra: </label><input id="F2Palabra" type="text" /></div>
+                <div><input type="button" id="btn1" value="Enviar"/></div>
+            </form>
+        </div>
+        <div><p>Respuesta:</p></div>
+        <div id="REjemplo1"></div>
+    </div>
+    <div>
+        <div><p>Ejemplo 2: Petición asíncrona POST y respuesta con JSON</p></div>
+        <div>
+            <form>
+                <div><label>Nombre y apellidos: </label><input id="F2Nom" type="text" /></div>
+                <div><label>F. Nacimiento: </label><input id="F2Fech" type="date" /></div>
+                <div><label>Hijos: </label><input id="F2Hijos" type="number" min="1" max="100" /></div>
+                <div><input type="button" id="btn2" value="Enviar"/></div>
+            </form>
+        </div>
+        <div><p>Respuesta:</p></div>
+        <div id="REjemplo2"></div>
+    </div>
+
+</body>
+</html>
